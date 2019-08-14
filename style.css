@@ -1,0 +1,64 @@
+/* Images */
+img {
+  max-width: 100%;
+  border-radius: 4px; /* Rounded corners */
+}
+#spacer {
+  border-radius: 0;
+  width: 100%;
+  
+}
+
+/* Header
+------------------------------*/
+.main-header {
+  background-image: url(https://live.staticflickr.com/2196/2268587409_45b9f80b0e_b.jpg);
+   background-size:cover;
+   min-height: 250px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  text-shadow: 2px 5px 32px #fff;
+}
+
+/* Navigation */
+nav {
+  display:flex;
+  justify-content: space-around;
+  padding: 10px 30%;
+}
+#navline {
+  margin:0;
+}
+
+/* About */
+#about {
+  margin: 15px 5%;
+}
+
+/* Market cards */
+
+.markets {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 8%;
+}
+.markets img {
+  width: 200px;
+}
+figure {
+  text-align: center;
+}
+figcaption {
+  padding: 5px 0;
+}
+
+/* lines */
+hr {
+  margin: 50px 0;
+}
+
+/* Text */
+h2 {
+  padding: 0 10px 20px;
+}
