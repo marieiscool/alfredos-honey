@@ -24,11 +24,23 @@ img {
 /* Navigation */
 nav {
   display:flex !important; /*bootstrap was overriding this one thing*/
-  justify-content: space-around;
-  padding: 10px 30%;
+  justify-content: space-between;
+  margin: 0 80px;
 }
 #navline {
   margin:0;
+}
+
+@media (max-width: 768px) {
+  nav {
+   display:block;
+    padding: 10px 0;
+    margin:0 20px;
+  }
+  .markets {
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
 }
 
 /* About */
@@ -40,17 +52,18 @@ nav {
 
 .markets {
   display: flex;
-  justify-content: space-around;
-  margin: 0 8%;
+  justify-content: space-between;
+  margin: 30px 8%;
 }
 .markets img {
   width: 200px;
 }
 figure {
   text-align: center;
+  
 }
 figcaption {
-  padding: 5px 0;
+  padding: 15px 0;
 }
 
 /* lines */
@@ -59,6 +72,14 @@ hr {
 }
 
 /* Text */
+
 h2 {
   padding: 0 10px 20px;
+}
+
+nav a {
+  font-size: 22px;
+}
+p {
+  padding: 40px 0 10px;
 }
