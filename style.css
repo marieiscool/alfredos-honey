@@ -23,7 +23,7 @@ img {
 
 /* Navigation */
 nav {
-  display:flex;
+  display:flex !important; /*bootstrap was overriding this one thing*/
   justify-content: space-around;
   padding: 10px 30%;
 }
@@ -33,7 +33,7 @@ nav {
 
 /* About */
 #about {
-  margin: 15px 5%;
+  margin: 15px 15%;
 }
 
 /* Market cards */
