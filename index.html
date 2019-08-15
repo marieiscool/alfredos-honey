@@ -3,24 +3,44 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css'>
+  <script>
+  // When the user scrolls the page, execute myFunction 
+window.onscroll = function() {myFunction()};
+
+// Get the navbar
+var navbar = document.getElementById("navbar");
+
+// Get the offset position of the navbar
+var sticky = navbar.offsetTop;
+
+// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+  </script>
   </head>
 <body>
   <header>
-    <div class="main-header">
+    <div class="main-header">   
     <h1>Alfredo's Honey</h1>
-    </div>
-    <nav> 
+      </div>
+    <div id="navbar"> 
       <a href="#about">About</a>
       <a href="#location">At The Market</a>
       <a href="#contact">Contact</a>
       
-    </nav>
+    </div>
     <hr id=navline>
   </header>
   <main>
     <section id="about">
+      <img src="https://lh3.googleusercontent.com/xwaWr4V23lTJOb52f7Gl6n1u3eKPo9cqHW-V0iBgsFfbJzt0wRDAuFiGnaegvV6MnRiFiZsFehDDx2IwIETsIK32SyY6c_k5ImaJhjBwIi2OBIvGbWDmh6PJUUEJ7hV02REk8L1utCuBWgXRFsUSvB9kcMaX668zMMECPBnjMZCaPEcHag_ZzHq1SFs7UO2FlaOCEiucZYbOaCTmevK9Xx-pn7wYAa2y6I-zXx6M-G7J8HGufErUyWfY-kRU9jpvsdt74B4x7v97MDwEIhtGvbjKHOZtRc0yC_7GOKq0q7V6bbJVZD_i7bZpNdeX_VBqi8yLhh8I78oRsuCT47drIhqBx-6CRDj7K_TV4tiCzZHpAYedrl4hUZRkLD2kbvRhy9GXX-F4Iaqv7o5GU6PLGvNZ70o1RpUNGo-YNQeLXQw7oXh2IbadX__bco0Ldld6ANRv5frtbRFwnc8STMLV_wC8hqW_C-Cd22idWD5_RplMnjWycktMBXn_ftaTc-CBf3E-_1nM1cyuIomjadHD6AfpbHho6nD6PazfSuJAipsRsFvt4eEpI-tBOjrxyDmvCUGP5TQW6ZHN99oz_RLe0kXOESODISWPDxrj2WCXGE_OWDcoy2tGX8PaHliCQQ74cm6Lomge-G_x2oGuF7m5zPJwOC8oQhqx=s598-no">
       <p>Alfredo Neuman tends to more than 100 hives located on farms in Western Henrico and Goochland county.
-
+        <br><br>
 Originally from Barranquilla, Colombia Alfredo started Beekeeping over 20 years ago as a tribute to his brother who was also a renowned Beekeeper in his native country.<p>
     </section>
     

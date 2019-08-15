@@ -12,40 +12,73 @@ img {
 /* Header
 ------------------------------*/
 .main-header {
-  background-image: url(https://live.staticflickr.com/2196/2268587409_45b9f80b0e_b.jpg);
+  background-image: url(https://github.com/marieiscool/alfredos-honey/blob/master/honeycomb.jpg?raw=true);
    background-size:cover;
+  background-position: left bottom;
    min-height: 250px;
   display:flex;
   justify-content: center;
   align-items: center;
   text-shadow: 2px 5px 32px #fff;
+  color: #000;
+  mix-blend-mode: darken;
 }
 
 /* Navigation */
-nav {
-  display:flex !important; /*bootstrap was overriding this one thing*/
+#navbar {
+  display:flex !important; /*bootstrap is overriding this*/
   justify-content: space-between;
-  margin: 0 80px;
+  overflow: hidden;
+  background-color: #fff;
+  padding: 10px 10%;
 }
 #navline {
   margin:0;
 }
 
+#navbar a {
+  font-size: 22px;
+}
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
 @media (max-width: 768px) {
-  nav {
+  #navbar {
    display:block;
-    padding: 10px 0;
-    margin:0 20px;
   }
   .markets {
     flex-wrap: wrap;
     flex-direction: column;
   }
+    #about {
+   flex-wrap: wrap;
+  }
+
 }
 
 /* About */
 #about {
   margin: 15px 15%;
+  display: flex;
+  flex-direction: row;
+  
+  padding: 20px 0;
+}
+
+#about img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  padding: 0 15px 0;
+}
+
+#about p {
+  min-width: 40%;
 }
 
 /* Market cards */
@@ -77,9 +110,17 @@ h2 {
   padding: 0 10px 20px;
 }
 
-nav a {
-  font-size: 22px;
-}
+
 p {
   padding: 40px 0 10px;
+}
+
+.sticky + main {
+  padding-top: 60px;
+}
+
+/* footer */
+
+footer p {
+  padding: 30px;
 }
