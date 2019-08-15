@@ -12,7 +12,7 @@ img {
 /* Header
 ------------------------------*/
 .main-header {
-  background-image: url(master/images/honeycomb.jpg);
+  background-image: url(https://github.com/marieiscool/alfredos-honey/blob/master/images/honeycomb.jpg?raw=true);
    background-size:cover;
   background-position: left bottom;
    min-height: 250px;
