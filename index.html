@@ -1,0 +1,72 @@
+  <!doctype html>
+<html>
+  <head>
+    <title>Alfredo's Honey</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css'>
+  <script>
+  // When the user scrolls the page, execute myFunction 
+window.onscroll = function() {myFunction()};
+
+// Get the navbar
+var navbar = document.getElementById("navbar");
+
+// Get the offset position of the navbar
+var sticky = navbar.offsetTop;
+
+// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+  </script>
+  </head>
+<body>
+  <header>
+    <div class="main-header">   
+    <h1>Alfredo's Honey</h1>
+      </div>
+    <div id="navbar"> 
+      <a href="#about">About</a>
+      <a href="#location">At The Market</a>
+      <a href="#contact">Contact</a>
+      
+    </div>
+    <hr id=navline>
+  </header>
+  <main>
+    <section id="about">
+      <img src="https://lh3.googleusercontent.com/xwaWr4V23lTJOb52f7Gl6n1u3eKPo9cqHW-V0iBgsFfbJzt0wRDAuFiGnaegvV6MnRiFiZsFehDDx2IwIETsIK32SyY6c_k5ImaJhjBwIi2OBIvGbWDmh6PJUUEJ7hV02REk8L1utCuBWgXRFsUSvB9kcMaX668zMMECPBnjMZCaPEcHag_ZzHq1SFs7UO2FlaOCEiucZYbOaCTmevK9Xx-pn7wYAa2y6I-zXx6M-G7J8HGufErUyWfY-kRU9jpvsdt74B4x7v97MDwEIhtGvbjKHOZtRc0yC_7GOKq0q7V6bbJVZD_i7bZpNdeX_VBqi8yLhh8I78oRsuCT47drIhqBx-6CRDj7K_TV4tiCzZHpAYedrl4hUZRkLD2kbvRhy9GXX-F4Iaqv7o5GU6PLGvNZ70o1RpUNGo-YNQeLXQw7oXh2IbadX__bco0Ldld6ANRv5frtbRFwnc8STMLV_wC8hqW_C-Cd22idWD5_RplMnjWycktMBXn_ftaTc-CBf3E-_1nM1cyuIomjadHD6AfpbHho6nD6PazfSuJAipsRsFvt4eEpI-tBOjrxyDmvCUGP5TQW6ZHN99oz_RLe0kXOESODISWPDxrj2WCXGE_OWDcoy2tGX8PaHliCQQ74cm6Lomge-G_x2oGuF7m5zPJwOC8oQhqx=s598-no">
+      <p>Alfredo Neuman tends to more than 100 hives located on farms in Western Henrico and Goochland county.
+        <br><br>
+Originally from Barranquilla, Colombia Alfredo started Beekeeping over 20 years ago as a tribute to his brother who was also a renowned Beekeeper in his native country.<p>
+    </section>
+    
+    <section id="location">
+      <h2>Where to get Alfredo's Honey</h2>
+      <div class="markets">
+      <figure>
+      <img src="https://rvagriculture.org/wp-content/uploads/2018/06/OnTheSquare_FarmersMarket_Round-600x600.jpg">
+        <figcaption>Fridays</figcaption>
+      </figure>
+      <figure>
+      <img src="https://scontent-iad3-1.xx.fbcdn.net/v/t1.0-9/59743057_2797893593560983_2908179075459710976_n.jpg?_nc_cat=111&_nc_oc=AQnCmd1toeI8t2fxwue_V-AFv9nPA5E17Qyebp1ocnR8u05utbLO9wb2EU8x4hNIJjA&_nc_ht=scontent-iad3-1.xx&oh=a0edce5c7da6bee1c26c434407da378e&oe=5DCEEB4A"><figcaption>Saturdays </figcaption>
+      </figure>
+     <figure> <img src="https://scontent-iad3-1.xx.fbcdn.net/v/t1.0-9/65886710_2227432864035339_1575856146948816896_n.jpg?_nc_cat=103&_nc_oc=AQloJVZI7TrbRFM8Mdi5hVHPtxzrwP8YWg0kYABlej8JNTOcrrqeZXIq7lrioN6UVWA&_nc_ht=scontent-iad3-1.xx&oh=213f106414fc24510c95940d3432059e&oe=5DD07043"><figcaption>Sundays</figcaption>
+      </figure>
+      </div>
+      
+      
+    </section>
+    <hr>
+    <img id=spacer src="https://scontent-iad3-1.xx.fbcdn.net/v/t1.0-9/20663678_1548014865219554_4382241781861200434_n.jpg?_nc_cat=109&_nc_oc=AQlnGbsQKZCDxioRFpfyU05yXgs2Zs4STrb--klD9HUO9Cflq26AjvG58Cx-W3VK38Q&_nc_ht=scontent-iad3-1.xx&oh=b2b109c4e4b7ad01c9fecef300b915df&oe=5DD6C36E">
+  </main>
+  <footer>
+    <p> &copy;Alfredo's Beehive 2019 // Created by <a href="http://marieiscool.com">Marieiscool</a></>
+  </footer>
+</body>
+</html>
