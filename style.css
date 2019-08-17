@@ -56,10 +56,14 @@ img {
     flex-wrap: wrap;
     flex-direction: column;
   }
+
+
+}
+
+@media (max-width: 525px) {
     #about {
    flex-wrap: wrap;
   }
-
 }
 
 /* About */
