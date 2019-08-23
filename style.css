@@ -1,23 +1,15 @@
-/* Images */
-img {
-  width: 100%;
-  height: 100%;
-  border-radius: 4px; /* Rounded corners */
-}
-#spacer {
-  border-radius: 0;
-  width: 100%;
-  
+* {
+  box-sizing: border-box; /*for grid*/
 }
 
 /* Header
 ------------------------------*/
 .main-header {
   background-image: url(https://github.com/marieiscool/alfredos-honey/blob/master/images/honeycomb.jpg?raw=true);
-   background-size:cover;
+  background-size: cover;
   background-position: left bottom;
-   min-height: 250px;
-  display:flex;
+  min-height: 250px;
+  display: flex;
   justify-content: center;
   align-items: center;
   text-shadow: 2px 5px 32px #fff;
@@ -27,14 +19,14 @@ img {
 
 /* Navigation */
 #navbar {
-  display:flex !important; /*bootstrap is overriding this*/
+  display: flex !important; /*bootstrap is overriding this*/
   justify-content: space-between;
   overflow: hidden;
   background-color: #fff;
   padding: 10px 10%;
 }
 #navline {
-  margin:0;
+  margin: 0;
 }
 
 #navbar a {
@@ -48,61 +40,59 @@ img {
   width: 100%;
 }
 
-@media (max-width: 768px) {
-  #navbar {
-   display:block;
-  }
-  .markets {
-    flex-wrap: wrap;
-    flex-direction: column;
-  }
-
-
+/* Images */
+img {
+  max-width: 100%;
+  border-radius: 10px; /* Rounded corners */
 }
 
-@media (max-width: 525px) {
-    #about {
-   flex-wrap: wrap;
-  }
+#thursimg {
+    border-radius: 7px;
 }
 
-/* About */
+#sotj {
+  border-radius: 100%;
+}
+
+#spacer {
+  border-radius: 0;
+  width: 100%;
+}
+
+/* MARKET SECTION  */
+
+.markets {
+  display: grid;
+  grid-template-rows: auto auto auto auto;
+  margin: 40px;
+}
+
+.market-grid-item {
+
+  text-align: center;
+  font-size: 24px;
+  padding-top: 18px;
+}
+
+/* ABOUT SECTION  */
+
+.about-grid-container {
+  display: grid;
+  grid-template-rows: auto auto;
+}
 #about {
-  margin: 15px 15%;
-  display: flex;
-  flex-direction: row;
-  
+  margin: 15px 8%;
+  overflow: auto;
   padding: 20px 0;
 }
 
 #about img {
   width: 100%;
-  max-width: 400px;
   height: 100%;
-  padding: 0 15px 0;
 }
 
 #about p {
-  min-width: 40%;
-}
-
-/* Market cards */
-
-.markets {
-  display: flex;
-  justify-content: space-between;
-  margin: 30px 8%;
-}
-.markets img {
-  width: 200px;
-  height: 200px;
-}
-figure {
-  text-align: center;
-  
-}
-figcaption {
-  padding: 15px 0;
+  text-align: justify;
 }
 
 /* lines */
@@ -113,12 +103,12 @@ hr {
 /* Text */
 
 h2 {
-  padding: 0 10px 20px;
+  font-size: 28px !important; /*bootstrap override*/
+  padding: 0 10px;
 }
 
-
 p {
-  padding: 40px 0 10px;
+  padding: 10px 10px 10px 0;
 }
 
 .sticky + main {
@@ -129,4 +119,92 @@ p {
 
 footer p {
   padding: 30px;
+}
+
+/* MEDIA QUERIES */
+
+/*       mobile */
+@media only screen and (max-width: 414px) {
+  h1 {
+    font-size: 34px !important; /*bootstrap overriding font size*/
+  }
+}
+
+/*       Tablet */
+@media only screen and (min-width: 415px) and (max-width: 768px) {
+  
+  .about-grid-container {
+    display: flex;
+  }
+  #about img {
+    width: 100%;
+    height: 100%;
+  }
+  #about p {
+    padding-left: 20px;
+  }
+  
+    .markets {
+    display: grid;
+    grid-template-columns: 50% 50%;
+       
+}
+  #thursimg {
+    width: 200px;
+  }
+  
+  #sunimg {
+    width: 175px;
+  }
+  
+  .market-grid-item img {
+    width: 130px;
+  }
+  
+  
+}
+
+/*       Desktop */
+@media only screen and (min-width: 768px)  {
+  
+  .about-grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-column-gap: 20px;
+  
+  }
+  .markets {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-column-gap: 10px;    
+}
+  #thursimg {
+    width: 200px;
+  }
+  
+  #sunimg {
+    width: 175px;
+  }
+  
+  .market-grid-item img {
+    width: 130px;
+  }
+  
+  #navbar {
+  padding: 10px 30%;
+  }
+  
+}
+
+/* iphone 5*/
+@media only screen and (max-width: 320px) {
+
+.main-header {
+text-align: justify;
+padding: 0 80px 0 100px;
+}
+
+#navbar a{
+font-size: 18px;
+}
 }
